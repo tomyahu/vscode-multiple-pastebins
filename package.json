@@ -14,8 +14,206 @@
   "contributes": {
     "commands": [
       {
-        "command": "multiple-pastebins.helloWorld",
-        "title": "Hello World"
+        "command": "multiple-pastebins.copy_0",
+        "title": "Copy to Pastebin 0"
+      },
+      {
+        "command": "multiple-pastebins.copy_1",
+        "title": "Copy to Pastebin 1"
+      },
+      {
+        "command": "multiple-pastebins.copy_2",
+        "title": "Copy to Pastebin 2"
+      },
+      {
+        "command": "multiple-pastebins.copy_3",
+        "title": "Copy to Pastebin 3"
+      },
+      {
+        "command": "multiple-pastebins.copy_4",
+        "title": "Copy to Pastebin 4"
+      },
+      {
+        "command": "multiple-pastebins.copy_5",
+        "title": "Copy to Pastebin 5"
+      },
+      {
+        "command": "multiple-pastebins.copy_6",
+        "title": "Copy to Pastebin 6"
+      },
+      {
+        "command": "multiple-pastebins.copy_7",
+        "title": "Copy to Pastebin 7"
+      },
+      {
+        "command": "multiple-pastebins.copy_8",
+        "title": "Copy to Pastebin 8"
+      },
+      {
+        "command": "multiple-pastebins.copy_9",
+        "title": "Copy to Pastebin 9"
+      },
+      {
+        "command": "multiple-pastebins.paste_0",
+        "title": "Paste from Pastebin 0"
+      },
+      {
+        "command": "multiple-pastebins.paste_1",
+        "title": "Paste from Pastebin 1"
+      },
+      {
+        "command": "multiple-pastebins.paste_2",
+        "title": "Paste from Pastebin 2"
+      },
+      {
+        "command": "multiple-pastebins.paste_3",
+        "title": "Paste from Pastebin 3"
+      },
+      {
+        "command": "multiple-pastebins.paste_4",
+        "title": "Paste from Pastebin 4"
+      },
+      {
+        "command": "multiple-pastebins.paste_5",
+        "title": "Paste from Pastebin 5"
+      },
+      {
+        "command": "multiple-pastebins.paste_6",
+        "title": "Paste from Pastebin 6"
+      },
+      {
+        "command": "multiple-pastebins.paste_7",
+        "title": "Paste from Pastebin 7"
+      },
+      {
+        "command": "multiple-pastebins.paste_8",
+        "title": "Paste from Pastebin 8"
+      },
+      {
+        "command": "multiple-pastebins.paste_9",
+        "title": "Paste from Pastebin 9"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "multiple-pastebins.copy_0",
+        "key": "ctrl+shift+0",
+        "mac": "cmd+shift+0",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.copy_1",
+        "key": "ctrl+shift+1",
+        "mac": "cmd+shift+1",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.copy_2",
+        "key": "ctrl+shift+2",
+        "mac": "cmd+shift+2",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.copy_3",
+        "key": "ctrl+shift+3",
+        "mac": "cmd+shift+3",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.copy_4",
+        "key": "ctrl+shift+4",
+        "mac": "cmd+shift+4",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.copy_5",
+        "key": "ctrl+shift+5",
+        "mac": "cmd+shift+5",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.copy_6",
+        "key": "ctrl+shift+6",
+        "mac": "cmd+shift+6",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.copy_7",
+        "key": "ctrl+shift+7",
+        "mac": "cmd+shift+7",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.copy_8",
+        "key": "ctrl+shift+8",
+        "mac": "cmd+shift+8",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.copy_9",
+        "key": "ctrl+shift+9",
+        "mac": "cmd+shift+9",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.paste_0",
+        "key": "ctrl+0",
+        "mac": "cmd+0",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.paste_1",
+        "key": "ctrl+1",
+        "mac": "cmd+1",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.paste_2",
+        "key": "ctrl+2",
+        "mac": "cmd+2",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.paste_3",
+        "key": "ctrl+3",
+        "mac": "cmd+3",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.paste_4",
+        "key": "ctrl+4",
+        "mac": "cmd+4",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.paste_5",
+        "key": "ctrl+5",
+        "mac": "cmd+5",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.paste_6",
+        "key": "ctrl+6",
+        "mac": "cmd+6",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.paste_7",
+        "key": "ctrl+7",
+        "mac": "cmd+7",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.paste_8",
+        "key": "ctrl+8",
+        "mac": "cmd+8",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiple-pastebins.paste_9",
+        "key": "ctrl+9",
+        "mac": "cmd+9",
+        "when": "editorTextFocus"
       }
     ]
   },
