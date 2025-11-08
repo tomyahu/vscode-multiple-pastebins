@@ -49,7 +49,7 @@ class Pastebin extends vscode.TreeItem {
 
 		let description = "Empty Pastebin";
 		if (! bin.empty)
-			description = "";
+			description = "$";
 		this.description = description;
 	}
 }
