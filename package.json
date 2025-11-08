@@ -1,8 +1,12 @@
 {
   "name": "multiple-pastebins",
-  "displayName": "multiple-pastebins",
+  "displayName": "Multiple Pastebins",
+  "author": {
+    "name": "Tomimi"
+  },
+  "publisher": "Tomimi",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.105.0"
   },
