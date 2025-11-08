@@ -97,61 +97,61 @@
     "keybindings": [
       {
         "command": "multiple-pastebins.copy_0",
-        "key": "ctrl+shift+0",
+        "key": "ctrl+alt+0",
         "mac": "cmd+shift+0",
         "when": "editorTextFocus"
       },
       {
         "command": "multiple-pastebins.copy_1",
-        "key": "ctrl+shift+1",
+        "key": "ctrl+alt+1",
         "mac": "cmd+shift+1",
         "when": "editorTextFocus"
       },
       {
         "command": "multiple-pastebins.copy_2",
-        "key": "ctrl+shift+2",
+        "key": "ctrl+alt+2",
         "mac": "cmd+shift+2",
         "when": "editorTextFocus"
       },
       {
         "command": "multiple-pastebins.copy_3",
-        "key": "ctrl+shift+3",
+        "key": "ctrl+alt+3",
         "mac": "cmd+shift+3",
         "when": "editorTextFocus"
       },
       {
         "command": "multiple-pastebins.copy_4",
-        "key": "ctrl+shift+4",
+        "key": "ctrl+alt+4",
         "mac": "cmd+shift+4",
         "when": "editorTextFocus"
       },
       {
         "command": "multiple-pastebins.copy_5",
-        "key": "ctrl+shift+5",
+        "key": "ctrl+alt+5",
         "mac": "cmd+shift+5",
         "when": "editorTextFocus"
       },
       {
         "command": "multiple-pastebins.copy_6",
-        "key": "ctrl+shift+6",
+        "key": "ctrl+alt+6",
         "mac": "cmd+shift+6",
         "when": "editorTextFocus"
       },
       {
         "command": "multiple-pastebins.copy_7",
-        "key": "ctrl+shift+7",
+        "key": "ctrl+alt+7",
         "mac": "cmd+shift+7",
         "when": "editorTextFocus"
       },
       {
         "command": "multiple-pastebins.copy_8",
-        "key": "ctrl+shift+8",
+        "key": "ctrl+alt+8",
         "mac": "cmd+shift+8",
         "when": "editorTextFocus"
       },
       {
         "command": "multiple-pastebins.copy_9",
-        "key": "ctrl+shift+9",
+        "key": "ctrl+alt+9",
         "mac": "cmd+shift+9",
         "when": "editorTextFocus"
       },
@@ -215,7 +215,15 @@
         "mac": "cmd+9",
         "when": "editorTextFocus"
       }
-    ]
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "pastebins",
+          "name": "Pastebins"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

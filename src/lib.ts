@@ -1,5 +1,10 @@
 import fs from 'fs';
-import * as vscode from 'vscode';
+
+export type Bin = {
+	id: number;
+	content: string;
+	empty: boolean;
+}
 
 
 export class PastebinLib {
@@ -17,11 +22,41 @@ export class PastebinLib {
 	}
 
 	copy(id : number, content : string) {
-		this.storage_dict["pb_" + id] = content
+		this.storage_dict["pb_" + id] = content;
 		fs.writeFileSync(this.storage_path, JSON.stringify(this.storage_dict));
 	}
 
-	paste(id : number) : string {
-		return this.storage_dict["pb_" + id]
+	paste(id : number) : string | undefined {
+		let text = this.storage_dict["pb_" + id];
+
+		return text;
+	}
+
+	getBinList() : Bin[] {
+		let result : Bin[] = [];
+		for (let i = 1; i < 10; i++) {
+			let text : string = this.paste(i) || "";
+			let empty : boolean = text == "";
+
+			result.push(
+				{
+					id: i,
+					content: text,
+					empty: empty 
+				}
+			)
+		}
+		let text : string = this.paste(0) || "";
+		let empty : boolean = text == "";
+
+		result.push(
+			{
+				id: 0,
+				content: text,
+				empty: empty 
+			}
+		)
+
+		return result;
 	}
 }
