@@ -36,6 +36,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// Paste commands
 	for (let i = 0; i < 10; i++) {
 		const disposable = vscode.commands.registerCommand('multiple-pastebins.paste_' + i, () => {
+			let editor : vscode.TextEditor | undefined = vscode.window.activeTextEditor;
 			if (editor) {
 				let text = paste_bin_lib.paste(i) || "";
 				editor.edit( ( edit : vscode.TextEditorEdit ) => {

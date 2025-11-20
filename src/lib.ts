@@ -21,15 +21,20 @@ export class PastebinLib {
 		);
 	}
 
+	refresh() {
+		this.storage_dict = JSON.parse(
+			fs.readFileSync(this.storage_path).toString()
+		);
+	}
+
 	copy(id : number, content : string) {
 		this.storage_dict["pb_" + id] = content;
 		fs.writeFileSync(this.storage_path, JSON.stringify(this.storage_dict));
 	}
 
 	paste(id : number) : string | undefined {
-		let text = this.storage_dict["pb_" + id];
-
-		return text;
+		this.refresh();
+		return this.storage_dict["pb_" + id];
 	}
 
 	getBinList() : Bin[] {
