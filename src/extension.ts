@@ -4,7 +4,6 @@ import { PastebinDataProvider } from './tree_view';
 
 export function activate(context: vscode.ExtensionContext) {
 	let storage_path = context.globalStorageUri.fsPath;
-	let editor : vscode.TextEditor | undefined = vscode.window.activeTextEditor;
 
 	let paste_bin_lib = new PastebinLib(storage_path);
 	let pastebin_provider = new PastebinDataProvider(paste_bin_lib);
